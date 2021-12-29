@@ -41,5 +41,42 @@ th{
   text-align: center;
 }
 .cardbgimage{
-  opacity: 0.1;
+  opacity: 0.05;
+}
+.cardsum{
+  position: absolute;
+  width: 100%;
+  top: 40px;
+  text-align:start;
+  margin-left: 20%;
+}
+
+.grid-container {
+  display: grid;
+  grid-template-columns: auto auto auto auto;
+}
+.grid-item {
+  padding: 20px;
+}
+
+
+@media screen and (max-width: 1150px) {
+  .grid-container {
+    display: grid;
+    grid-template-columns: auto auto auto;
+  }
+}
+
+@media screen and (max-width: 900px) {
+  .grid-container {
+    display: grid;
+    grid-template-columns: auto auto;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .grid-container {
+    display: grid;
+    grid-template-columns: auto;
+  }
 }
