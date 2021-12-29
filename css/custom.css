@@ -9,3 +9,37 @@
 /* ----------------------------------------------------
 	You can put your custom css code here: 
 -------------------------------------------------------*/
+
+
+#reflist {
+  list-style-type:circle;
+  margin-left: 14px;
+}
+#worldimg{
+  text-align: center;
+}
+#risktitle{
+  font-size: 1em;
+}
+table, th, td {
+  border: 1px solid black;
+  border-collapse: collapse;
+  text-align: center;
+}
+th{
+  background-color: #fcc236;
+}
+#nestedrisklist{
+  list-style-type:disc;
+  margin-left: 14px;
+}
+.verkoopcard_title{
+  position: absolute;
+  width: 100%;
+  top: 10px;
+  font-size: 1.2em;
+  text-align: center;
+}
+.cardbgimage{
+  opacity: 0.1;
+}
