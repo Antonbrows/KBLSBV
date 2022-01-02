@@ -6,11 +6,11 @@ if (isset($_POST['submit'])) {
     $message = $_POST['message'];
     $telephone = $_POST['telephone'];
 
-    $mailTo = "karelbroos@kblsbv.be";
+    $mailTo = "antonobroos@gmail.com";
     $headers = "From: ".$mailfrom;
     $txt = "Dit bericht is verstuurd vanuit kblsbv.be.\n\n".$message;
 
     mail($mailTo, $subject, $txt, $headers);
-    header("Location: index.html?mailsend");
+    header("Location: index.html");
 }
 ?>
