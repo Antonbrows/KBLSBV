@@ -6,7 +6,7 @@ if (isset($_POST['submit'])) {
     $message = $_POST['message']
     $telephone = $_POST['telephone']
 
-    $mailTo = "antonobroos@gmail.com";
+    $mailTo = "karelbroos@kblsbv.be";
     $headers = "From: ".$mailfrom;
     $txt = "Dit bericht is verstuurd vanuit kblsbv.be.\n\n".$message;
 
