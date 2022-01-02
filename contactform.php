@@ -7,7 +7,7 @@ if (isset($_POST['submit'])) {
     $telephone = $_POST['telephone']
 
     $mailTo = "antonobroos@gmail.com";
-    $headers = "van: ".$mailfrom;
+    $headers = "From: ".$mailfrom;
     $txt = "Dit bericht is verstuurd vanuit kblsbv.be.\n\n".$message;
 
     mail($mailTo, $subject, $txt, $headers);
