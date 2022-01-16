@@ -340,32 +340,5 @@
     <script src="js/owl.carousel.min.js"></script>
     <script src="js/waypoints.min.js"></script>
     <script src="js/main.js"></script>
-    <script src="https://smtpjs.com/v3/smtp.js"></script>
-
-    <script>
-        const form = document.querySelector('.contact_form_mail');
-
-        function SendMail(e){
-            e.preventDefault();
-
-            const email = document.querySelector('.email'),
-                  subject = document.querySelector('.subject'),
-                  name = document.querySelector('.name'),
-                  tel = document.querySelector('.telnr'),
-                  msg = document.querySelector('.msg');
-
-            Email.send({
-                SecureToken : "98d6efda-8ce7-4947-979d-73fb13862a58",
-                To : 's102427@ap.be',
-                From : 'antonobroos@gmail.com',
-                Subject : subject.value,
-                Body : 'Email: ' + email.value + ', \nNaam: ' + name.value + ', \nTelefoon: ' + tel.value + ', \nBericht: ' + msg.value
-            }).then(
-                message => alert(message)
-            );
-        }
-
-        form.addEventListener('submit', SendMail);
-    </script>
 </body>
 </html>
