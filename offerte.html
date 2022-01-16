@@ -103,14 +103,18 @@
                                 <h2 class="title__line">VRAAG EEN <span class="text--theme">OFFERTE</span> AAN</h2>
                                 <p>U kan rekenen op een goede service en een persoonlijke aanpak.</p>
                             </div>
-                            <form id="contact-form" action="mailto:s102427@ap.be" method="post" enctype="text/plain">
+                            <form class="contact_form_mail" id="contact-form" action="#">
                                 <div class="clint__comment__form">
                                     <div class="single__cl__form">
-                                        <input name="email" type="email" placeholder="Email">
-                                        <input name="subject" type="text" placeholder="onderwerp">
+                                        <input class="name" name="name" type="text" placeholder="Naam">
+                                        <input class="telnr" name="telnr" type="text" placeholder="Telefoon">
+                                    </div>
+                                    <div class="single__cl__form">
+                                        <input class="email" name="email" type="email" placeholder="Email*">
+                                        <input class="subject" name="subject" type="text" placeholder="onderwerp*">
                                     </div>
                                     <div class="single__cl__message">
-                                        <textarea name="message" placeholder="bericht"></textarea>
+                                        <textarea class="msg" name="body" placeholder="bericht*"></textarea>
                                     </div>
                                     <div class="clint__submit__btn">
                                         <button class="submit htc__btn" type="submit">
@@ -119,7 +123,6 @@
                                     </div>
                                 </div>
                             </form>
-                            <p class="form-messege"></p>
                         </div>
                     </div>
                 </div>
@@ -251,5 +254,32 @@
     <script src="js/owl.carousel.min.js"></script>
     <script src="js/waypoints.min.js"></script>
     <script src="js/main.js"></script>
+    <script src="https://smtpjs.com/v3/smtp.js"></script>
+
+    <script>
+        const form = document.querySelector('.contact_form_mail');
+
+        function SendMail(e){
+            e.preventDefault();
+
+            const email = document.querySelector('.email'),
+                  subject = document.querySelector('.subject'),
+                  name = document.querySelector('.name'),
+                  tel = document.querySelector('.telnr'),
+                  msg = document.querySelector('.msg');
+
+            Email.send({
+                SecureToken : "98d6efda-8ce7-4947-979d-73fb13862a58",
+                To : 's102427@ap.be',
+                From : 'antonobroos@gmail.com',
+                Subject : subject.value,
+                Body : 'Email: ' + email.value + ', \nNaam: ' + name.value + ', \nTelefoon: ' + tel.value + ', \nBericht: ' + msg.value
+            }).then(
+                message => alert(message)
+            );
+        }
+
+        form.addEventListener('submit', SendMail);
+    </script>
 </body>
 </html>
