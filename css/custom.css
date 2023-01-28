@@ -20,7 +20,7 @@ th{
 
 .grid-container {
   display: grid;
-  grid-template-columns: 25% 25% 25% 25%;
+  grid-template-columns: 20% 20% 20% 20% 20%;
 }
 
 .grid-item ul{
@@ -71,16 +71,19 @@ th{
   height: 100px;
 }
 
+@media screen and (max-width: 1600px) {
+  .grid-container {
+    display: grid;
+    grid-template-columns: 25% 25% 25% 25%;
+    justify-content: center;
+  }
+}
+
 @media screen and (max-width: 1300px) {
   .grid-container {
     display: grid;
     grid-template-columns: 33% 33% 33%;
     justify-content: center;
-  }
-  .mapsimg{
-    position: relative;
-    width: 100%;
-    left: 0;
   }
 }
 
