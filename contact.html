@@ -142,8 +142,24 @@
                         </div>
                     </div>
                 </div>
+                <div id="map" style="height: 500px; width: 100%;"></div>
+                    <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"></script>
+                    <link href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css" rel="stylesheet">
+                    <script src="https://unpkg.com/leaflet-languageswitch@1.0.0/leaflet.language-switch.js"></script>
+                    <script>
+                        var map = L.map('map').setView([51.3889, 4.46052], 12);
+                        L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+                            attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors',
+                            language: 'nl'
+                        }).addTo(map);
+                        var marker = L.marker([51.3889, 4.46052]).addTo(map);
+                        marker.bindPopup("<b>Heuvel 45</b>").openPopup();
+                        L.control.languages({
+                            languages: ['nl','en'],
+                            defaultLanguage: 'nl'
+                        }).addTo(map);
+                    </script>
             </div>
-            <img src="images/bg/maps.jpg" class="mapsimg">
         </section>
         <section class="htc__contact__area bg__white ptb--150">
             <div class="container">
