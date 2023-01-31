@@ -1,20 +1,4 @@
-/*-----------------------------------------------------------------------------------
 
-  Template Name: Simply Construction HTML Template.
-  Template URI: #
-  Description: Simply Construction is a unique website template designed in HTML with a simple & beautiful look. There is an excellent solution for creating clean, wonderful and trending material design corporate, corporate any other purposes websites.
-  Author: DevItems
-  Version: 1.0
------------------------------------------------------------------------------------*/
-/*
-
-
-    font-family: 'Raleway', sans-serif;
-
-    font-family: 'Open Sans', sans-serif;
-
-
-*/
 .slider-area > img {
   height: 100vh;
   width: 100%;
@@ -97,44 +81,3 @@
     width: 100%;
     z-index: 1;
 }
-
-
-
-/*----------------------
-  Animation
--------------------------*/
-.slider__activation__wrap {
-    position: relative;
-}
-.slider__activation__wrap .owl-nav div {
-    height: 54px;
-    left: 0;
-    line-height: 59px;
-    position: absolute;
-    top: 50%;
-    width: 35px;
-}
-
-.slider__activation__wrap .owl-nav div.owl-next {
-    left: auto;
-    right: 0;
-}
-.slider__activation__wrap .owl-nav div i {
-    color: #fff;
-    font-size: 30px;
-}
-.slider__activation__wrap.owl-theme .owl-nav [class*="owl-"] {
-    background: #1f2d30 none repeat scroll 0 0;
-    transition: 0.5s;
-}
-
-.slider__activation__wrap.owl-theme .owl-nav [class*="owl-"]:hover {
-    background: rgba(184, 144, 37, 0.6) none repeat scroll 0 0;
-}
-
-
-
-.slider__activation__wrap.owl-theme .owl-nav {
-  margin-top: 0;
-}
-

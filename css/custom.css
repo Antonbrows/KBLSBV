@@ -5,14 +5,6 @@
 #worldimg{
   text-align: center;
 }
-table, th, td {
-  border: 1px solid black;
-  border-collapse: collapse;
-  text-align: center;
-}
-th{
-  background-color: #fcc236;
-}
 #nestedrisklist{
   list-style-type:disc;
   margin-left: 14px;
@@ -75,6 +67,32 @@ th{
   color: white;
 }
 
+table {
+  font-family: arial, sans-serif;
+  width: 100%;
+  border-collapse: collapse;
+  text-align: center;
+}
+
+td, th {
+  padding: 8px;
+  text-align: center;
+}
+
+tr:nth-child(odd) {
+  background-color: #dddddd;
+}
+
+th {
+  background-color: #fcc236;
+}
+
+#contactsection{
+  background-color: rgb(241, 241, 241);
+  border-radius: 10px 10px 10px 10px;
+  padding: 20px;
+}
+
 @media screen and (max-width: 1600px) {
   .grid-container {
     display: grid;
@@ -96,6 +114,10 @@ th{
     display: grid;
     grid-template-columns: 50% 50%;
     justify-content: center;
+  }
+  .logo{
+    height: auto;
+    width: 110px;
   }
 }
 
