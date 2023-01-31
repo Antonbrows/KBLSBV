@@ -1,58 +1,3 @@
-/*-----------------------------------------------------------------------------------
-  Template Name: Simply Construction HTML Template.
-  Template URI: #
-  Description: Simply Construction is a unique website template designed in HTML with a simple & beautiful look. There is an excellent solution for creating clean, wonderful and trending material design corporate, corporate any other purposes websites.
-  Author: DevItems
-  Version: 1.0
------------------------------------------------------------------------------------*/
-
-
- 
-/*======================================
-
-[  Table of contents  ]
-
-
-  01. Reset
-  02. Helper Classes
-  03. Typography
-` 04. Transtion
-  05. Images
-  06. Bg-Color
-  07. Social Icon Text Color
-  08. Social Icon Bg Color
-  09. Text Color
-  10. Bg Images
-  11. Background overlay
-  12. Background Black Overlay
-  13. Input
-  14. Basic margin padding
-  15. Margin top
-  16. Margin bottom
-  17. Padding top
-  18. Padding bottom
-  19. Page section padding
-  20. Page section margin
-  21. Custom cloumn
-  22. Moz Placeholder
-
-[ End table content ]
-======================================*/
-
-/*
-
-
-    font-family: 'Raleway', sans-serif;
-
-    font-family: 'Open Sans', sans-serif;
-
-
-*/
-
-/*------------------
-  01. Reset
---------------------*/
-*,
 h1,
 h2,
 h3,
@@ -66,9 +11,6 @@ a {
   padding: 0;
 }
 
-/*----------------------
-  02. Helper Classes
-------------------------*/
 .fix {
     overflow: hidden
 }
@@ -78,9 +20,7 @@ a {
     color: #000;
     padding: 0.2em 0;
 }
-/*-----------------------
-  03. Typography
-------------------------*/
+
 html {
     font-size: 100%;
 }
@@ -148,6 +88,9 @@ h5, .h5 {
 h6, .h6 {
     font-size: 16px;
     font-weight: 300;
+}
+.slider__inner h2{
+  color: #fff;
 }
 @media all and (max-width: 767px) {
     h1, .h1 {
@@ -642,7 +585,7 @@ textarea:focus {
 .pt--100 { padding-top: 100px }
 .pt--110 { padding-top: 110px }
 .pt--120 { padding-top: 120px }
-.pt--130 { padding-top: 130px }-
+.pt--130 { padding-top: 130px }
 .pt--140 { padding-top: 140px }
 .pt--150 { padding-top: 150px }
 
@@ -804,19 +747,19 @@ input::-moz-placeholder {
   color: #444 !important;
   opacity: 1;
 }
-input::-webkit-input-placeholder { / Chrome/Opera/Safari /
+input::-webkit-input-placeholder {
   color: #444 !important;
   opacity: 1;
 }
-input::-moz-placeholder { / Firefox 19+ /
+input::-moz-placeholder {
   color: #444 !important;
   opacity: 1;
 }
-input:-ms-input-placeholder { / IE 10+ /
+input:-ms-input-placeholder {
   color: #444 !important;
   opacity: 1;
 }
-input:-moz-placeholder { / Firefox 18- /
+input:-moz-placeholder {
   color: #444 !important;
   opacity: 1;
 }
